@@ -11,8 +11,16 @@
     color: #226;
     border-bottom: 3px dotted #77d;
   }
+  
+  .counter {
+    margin: 0;
+    color: #226;
+    font: 100%;
+    font-style: italic;
+  }
 
   /* An entry in the store catalog */
+
   .entry {
     overflow: auto;
     margin-top: 1em;
@@ -34,11 +42,15 @@
       margin-bottom: 2px;
       color: #227;
     }
-
+    
     p, div.price_line {
       margin-left: 100px;
       margin-top: 0.5em; 
       margin-bottom: 0.8em; 
+      
+      form, div {
+        display: inline;
+      }
     }
 
     .price {
