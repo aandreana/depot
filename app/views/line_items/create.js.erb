@@ -1,0 +1,7 @@
+// This hides the side cart when it's empty.  application.html.erb display set to none to start
+if ($('#cart tr').length == 1) { $('#cart').show('blind', 100); }
+
+// The following tells the browser to replace the content of the element whose id=cart with this HTML
+$('#cart').html("<%= escape_javascript render(@cart) %>");
+
+$('#current_item').css({'background-color': '#88ff88'}).animate({'background-color':'#114411'}, 1000);
